@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCAFFEBA284491E500AC17AF /* tempat wisata.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEB9284491E500AC17AF /* tempat wisata.swift */; };
+		BCAFFEBC284491FE00AC17AF /* favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEBB284491FE00AC17AF /* favorite.swift */; };
+		BCAFFEBE2844920600AC17AF /* setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEBD2844920600AC17AF /* setting.swift */; };
+		BCAFFEC02844998D00AC17AF /* category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEBF2844998D00AC17AF /* category.swift */; };
+		BCAFFEC22844999700AC17AF /* feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEC12844999700AC17AF /* feature.swift */; };
+		BCAFFEC428450B0400AC17AF /* food beverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEC328450B0300AC17AF /* food beverage.swift */; };
 		BCDC1765283C6A2900E6E516 /* sbyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC1764283C6A2900E6E516 /* sbyApp.swift */; };
 		BCDC1767283C6A2900E6E516 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC1766283C6A2900E6E516 /* ContentView.swift */; };
 		BCDC1769283C6A2B00E6E516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDC1768283C6A2B00E6E516 /* Assets.xcassets */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BCAFFEB9284491E500AC17AF /* tempat wisata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tempat wisata.swift"; sourceTree = "<group>"; };
+		BCAFFEBB284491FE00AC17AF /* favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favorite.swift; sourceTree = "<group>"; };
+		BCAFFEBD2844920600AC17AF /* setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting.swift; sourceTree = "<group>"; };
+		BCAFFEBF2844998D00AC17AF /* category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = category.swift; sourceTree = "<group>"; };
+		BCAFFEC12844999700AC17AF /* feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feature.swift; sourceTree = "<group>"; };
+		BCAFFEC328450B0300AC17AF /* food beverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "food beverage.swift"; sourceTree = "<group>"; };
 		BCDC1761283C6A2900E6E516 /* sby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDC1764283C6A2900E6E516 /* sbyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sbyApp.swift; sourceTree = "<group>"; };
 		BCDC1766283C6A2900E6E516 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +108,12 @@
 			children = (
 				BCDC1764283C6A2900E6E516 /* sbyApp.swift */,
 				BCDC1766283C6A2900E6E516 /* ContentView.swift */,
+				BCAFFEBB284491FE00AC17AF /* favorite.swift */,
+				BCAFFEBD2844920600AC17AF /* setting.swift */,
+				BCAFFEB9284491E500AC17AF /* tempat wisata.swift */,
+				BCAFFEBF2844998D00AC17AF /* category.swift */,
+				BCAFFEC328450B0300AC17AF /* food beverage.swift */,
+				BCAFFEC12844999700AC17AF /* feature.swift */,
 				BCDC1768283C6A2B00E6E516 /* Assets.xcassets */,
 				BCDC176A283C6A2B00E6E516 /* Preview Content */,
 			);
@@ -258,7 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCDC1767283C6A2900E6E516 /* ContentView.swift in Sources */,
+				BCAFFEC02844998D00AC17AF /* category.swift in Sources */,
+				BCAFFEC22844999700AC17AF /* feature.swift in Sources */,
+				BCAFFEBE2844920600AC17AF /* setting.swift in Sources */,
+				BCAFFEBC284491FE00AC17AF /* favorite.swift in Sources */,
 				BCDC1765283C6A2900E6E516 /* sbyApp.swift in Sources */,
+				BCAFFEBA284491E500AC17AF /* tempat wisata.swift in Sources */,
+				BCAFFEC428450B0400AC17AF /* food beverage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
