@@ -10,18 +10,18 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         TabView{
-            tempat_wisata()
+            category()
                 .tabItem{
                     Label("Home", systemImage: "house")
                 }
-//            tempat_wisata()
-//                .tabItem{
-//                    Label("Category", systemImage: "mappin.and.ellipse")
-//                }
-            favorite()
+            tempat_wisata()
                 .tabItem{
-                    Label("Favorite", systemImage: "star")
+                    Label("Category", systemImage: "mappin.and.ellipse")
                 }
+//            favorite()
+//                .tabItem{
+//                    Label("Favorite", systemImage: "star")
+//                }
 //            food_beverage()
 //                .tabItem{
 //                    Label("Home", systemImage: "house")

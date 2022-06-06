@@ -11,6 +11,7 @@ struct favorite: View {
     var body: some View {
         NavigationView{
             Text("Kamu belum menambahkan favorite")
+                .foregroundColor(.brown)
                 .navigationTitle("Favorite Place")
         }
         .navigationViewStyle(.stack)

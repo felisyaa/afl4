@@ -11,6 +11,7 @@ struct setting: View {
     var body: some View {
         NavigationView{
             Text("v1.0.0")
+                .foregroundColor(.brown)
                 .navigationTitle("Settings")
         }
         .navigationViewStyle(.stack)

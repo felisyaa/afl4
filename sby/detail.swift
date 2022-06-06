@@ -15,6 +15,7 @@ struct detail: View {
                 image in image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
+                    .frame(width: 1)
             }placeholder: {
                 Image(systemName: "photo")
                     .resizable()
@@ -26,33 +27,41 @@ struct detail: View {
             .frame(height: 300)
             .background(LinearGradient(gradient: Gradient(colors:[ .black.opacity(0.5), .black.opacity(0)]), startPoint: .bottom, endPoint: .topLeading))
             
-            VStack(spacing: 30){
+            VStack(spacing: 10){
                 Text(wisata.name)
                     .font(.title)
+                    .foregroundColor(.brown)
                     .bold()
                     .multilineTextAlignment(.center)
-                    .shadow(color: .gray, radius: 2, x: 1, y: 0)
+                    .shadow(color: .gray, radius: 2, x: 0, y: 0)
+                Text(wisata.star)
+                    .font(.title)
                 VStack(alignment: .leading, spacing: 40){
                     Text(wisata.description)
                     
                     VStack(alignment: .leading, spacing: 20){
                         HStack{
-                            Text("Alamat     :")
+                            Text("Alamat     ")
                                 .bold()
+                                .foregroundColor(.brown)
                             Text(wisata.alamat)
                         }
                         HStack{
-                            Text("Jam Buka:")
+                            Text("Jam Buka")
                                 .bold()
+                                .foregroundColor(.brown)
                             Text(wisata.jam)
                         }
                         HStack{
-                            Text("Telp            :")
+                            Text("Telp            ")
                                 .bold()
+                                .foregroundColor(.brown)
                             Text(wisata.telp)
                         }
                         mapview(coordinate: wisata.locationCoordinate)
-                            .scaledToFit()
+//                            .scaledToFit()
+                            .frame(height: 300)
+                            .cornerRadius(25)
                     }
 //                    .frame(width: .infinity, alignment: .leading)
                 }

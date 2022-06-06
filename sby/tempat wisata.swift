@@ -16,10 +16,12 @@ struct tempat_wisata: View {
                         catview(category: Category)
                     }label:{
                         Text(Category.rawValue + "s")
+                            .foregroundColor(.brown)
                     }
                 }
             }
             .navigationTitle("Tempat Wisata")
+            
         }
         .navigationViewStyle(.stack)
         
