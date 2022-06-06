@@ -9,25 +9,29 @@ import SwiftUI
 
 struct food_beverage: View {
     var body: some View {
-        ScrollView{
-            Spacer()
-            Text("Food & Beverage")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.horizontal,0)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            Text("Mau makan apa?")
-                .padding(.horizontal,0)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            feature(image: Image("cing"))
-            Divider()
-            Text("Featured")
-                .fontWeight(.bold)
-                .padding(.horizontal, 0)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            category(image: Image("cing"))
+        NavigationView{
+            Text("Food and Beverage")
+                .navigationTitle("Food and Beverage")
         }
-        .padding()
+//        ScrollView{
+//            Spacer()
+//            Text("Food & Beverage")
+//                .font(.title)
+//                .fontWeight(.bold)
+//                .padding(.horizontal,0)
+//                .frame(maxWidth: .infinity, alignment: .leading)
+//            Text("Mau makan apa?")
+//                .padding(.horizontal,0)
+//                .frame(maxWidth: .infinity, alignment: .leading)
+//            feature(image: Image("cing"))
+//            Divider()
+//            Text("Featured")
+//                .fontWeight(.bold)
+//                .padding(.horizontal, 0)
+//                .frame(maxWidth: .infinity, alignment: .leading)
+//            category(image: Image("cing"))
+//        }
+//        .padding()
     }
 }
 

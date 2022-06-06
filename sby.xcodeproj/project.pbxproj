@@ -13,6 +13,13 @@
 		BCAFFEC02844998D00AC17AF /* category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEBF2844998D00AC17AF /* category.swift */; };
 		BCAFFEC22844999700AC17AF /* feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEC12844999700AC17AF /* feature.swift */; };
 		BCAFFEC428450B0400AC17AF /* food beverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEC328450B0300AC17AF /* food beverage.swift */; };
+		BCAFFEC6284C6F7E00AC17AF /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEC5284C6F7E00AC17AF /* TabBar.swift */; };
+		BCAFFEC8284C72F000AC17AF /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFEC7284C72F000AC17AF /* home.swift */; };
+		BCAFFECD284C75D500AC17AF /* wisatamodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFFECC284C75D500AC17AF /* wisatamodel.swift */; };
+		BCD4323F284CF438007C69AF /* list.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4323E284CF438007C69AF /* list.swift */; };
+		BCD43241284D704D007C69AF /* detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD43240284D704D007C69AF /* detail.swift */; };
+		BCD43243284D7E75007C69AF /* catview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD43242284D7E75007C69AF /* catview.swift */; };
+		BCD43245284D85D8007C69AF /* mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD43244284D85D8007C69AF /* mapview.swift */; };
 		BCDC1765283C6A2900E6E516 /* sbyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC1764283C6A2900E6E516 /* sbyApp.swift */; };
 		BCDC1767283C6A2900E6E516 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC1766283C6A2900E6E516 /* ContentView.swift */; };
 		BCDC1769283C6A2B00E6E516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDC1768283C6A2B00E6E516 /* Assets.xcassets */; };
@@ -46,6 +53,13 @@
 		BCAFFEBF2844998D00AC17AF /* category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = category.swift; sourceTree = "<group>"; };
 		BCAFFEC12844999700AC17AF /* feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feature.swift; sourceTree = "<group>"; };
 		BCAFFEC328450B0300AC17AF /* food beverage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "food beverage.swift"; sourceTree = "<group>"; };
+		BCAFFEC5284C6F7E00AC17AF /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		BCAFFEC7284C72F000AC17AF /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		BCAFFECC284C75D500AC17AF /* wisatamodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wisatamodel.swift; sourceTree = "<group>"; };
+		BCD4323E284CF438007C69AF /* list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = list.swift; sourceTree = "<group>"; };
+		BCD43240284D704D007C69AF /* detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detail.swift; sourceTree = "<group>"; };
+		BCD43242284D7E75007C69AF /* catview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catview.swift; sourceTree = "<group>"; };
+		BCD43244284D85D8007C69AF /* mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapview.swift; sourceTree = "<group>"; };
 		BCDC1761283C6A2900E6E516 /* sby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDC1764283C6A2900E6E516 /* sbyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sbyApp.swift; sourceTree = "<group>"; };
 		BCDC1766283C6A2900E6E516 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BCAFFECA284C756F00AC17AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCAFFECC284C75D500AC17AF /* wisatamodel.swift */,
+				BCD43244284D85D8007C69AF /* mapview.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BCDC1758283C6A2900E6E516 = {
 			isa = PBXGroup;
 			children = (
@@ -108,10 +131,16 @@
 			children = (
 				BCDC1764283C6A2900E6E516 /* sbyApp.swift */,
 				BCDC1766283C6A2900E6E516 /* ContentView.swift */,
+				BCAFFEC7284C72F000AC17AF /* home.swift */,
 				BCAFFEBB284491FE00AC17AF /* favorite.swift */,
+				BCD4323E284CF438007C69AF /* list.swift */,
+				BCAFFEC5284C6F7E00AC17AF /* TabBar.swift */,
 				BCAFFEBD2844920600AC17AF /* setting.swift */,
 				BCAFFEB9284491E500AC17AF /* tempat wisata.swift */,
+				BCD43240284D704D007C69AF /* detail.swift */,
+				BCAFFECA284C756F00AC17AF /* Models */,
 				BCAFFEBF2844998D00AC17AF /* category.swift */,
+				BCD43242284D7E75007C69AF /* catview.swift */,
 				BCAFFEC328450B0300AC17AF /* food beverage.swift */,
 				BCAFFEC12844999700AC17AF /* feature.swift */,
 				BCDC1768283C6A2B00E6E516 /* Assets.xcassets */,
@@ -275,14 +304,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD43245284D85D8007C69AF /* mapview.swift in Sources */,
+				BCAFFEC6284C6F7E00AC17AF /* TabBar.swift in Sources */,
+				BCAFFECD284C75D500AC17AF /* wisatamodel.swift in Sources */,
 				BCDC1767283C6A2900E6E516 /* ContentView.swift in Sources */,
 				BCAFFEC02844998D00AC17AF /* category.swift in Sources */,
 				BCAFFEC22844999700AC17AF /* feature.swift in Sources */,
+				BCD4323F284CF438007C69AF /* list.swift in Sources */,
 				BCAFFEBE2844920600AC17AF /* setting.swift in Sources */,
+				BCD43243284D7E75007C69AF /* catview.swift in Sources */,
 				BCAFFEBC284491FE00AC17AF /* favorite.swift in Sources */,
 				BCDC1765283C6A2900E6E516 /* sbyApp.swift in Sources */,
 				BCAFFEBA284491E500AC17AF /* tempat wisata.swift in Sources */,
+				BCAFFEC8284C72F000AC17AF /* home.swift in Sources */,
 				BCAFFEC428450B0400AC17AF /* food beverage.swift in Sources */,
+				BCD43241284D704D007C69AF /* detail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
