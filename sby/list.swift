@@ -35,7 +35,7 @@ struct list: View {
                     }
                 }.padding(.horizontal, 20)
             )
-            ForEach(wisata.filter({ "\($0)".contains(searchText) || searchText.isEmpty }), id: \.self){ num in
+//            ForEach((wisata.filter({ "\($0)".contains(searchText) || searchText.isEmpty }), id: \.self){ num in
             HStack{
             Text("\(wisata.count) \(wisata.count > 1 ? "wisata": "wisata ")")
                 .font(.headline)
@@ -44,11 +44,10 @@ struct list: View {
             Spacer()
         }
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 160), spacing: 15)], spacing: 15) {
-            ForEach(wisata) { wisata in
+            ForEach((wisata).filter({ "\($0)".contains(searchText) || searchText.isEmpty })) { wisata in
                 NavigationLink(destination: detail(wisata: wisata)){
                     feature(wisata: wisata)
                 }
-            }
             }
         .padding(.top)
             }
