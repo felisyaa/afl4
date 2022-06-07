@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct list: View {
+    @State var searchText = ""
+    @State var sear = false
     var wisata: [wisata]
     var body: some View {
         VStack{
+            HStack{
+                TextField("Search", text: $searchText)
+                    .padding(.leading,20)
+            }
+            .padding()
+            .padding(.horizontal)
+            .background(Color(.systemGray4))
+            .cornerRadius(10)
+            .onTapGesture {
+                sear = true
+            }
+            .overlay(
+                HStack{
+                    Image(systemName: "magnifyingglass")
+                        .foregroundColor(.gray)
+                    Spacer()
+                    if sear{
+                        Button(action: {searchText = ""}, label: {Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(.gray)})
+                    }
+                }.padding(.horizontal, 20)
+            )
+            ForEach(wisata.filter({ "\($0)".contains(searchText) || searchText.isEmpty }), id: \.self){ num in
             HStack{
             Text("\(wisata.count) \(wisata.count > 1 ? "wisata": "wisata ")")
                 .font(.headline)
@@ -26,6 +51,7 @@ struct list: View {
             }
             }
         .padding(.top)
+            }
         }
         .padding(.horizontal)
     }

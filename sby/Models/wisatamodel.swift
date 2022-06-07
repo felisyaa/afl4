@@ -16,7 +16,7 @@ enum Category: String, CaseIterable, Identifiable{
     case mus = "Museum"
 }
 
-struct wisata: Identifiable{
+struct wisata: Identifiable, Hashable{
     let id = UUID()
     let name: String
     let image: String

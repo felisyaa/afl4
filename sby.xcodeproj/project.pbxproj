@@ -20,6 +20,7 @@
 		BCD43241284D704D007C69AF /* detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD43240284D704D007C69AF /* detail.swift */; };
 		BCD43243284D7E75007C69AF /* catview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD43242284D7E75007C69AF /* catview.swift */; };
 		BCD43245284D85D8007C69AF /* mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD43244284D85D8007C69AF /* mapview.swift */; };
+		BCD43247284E478C007C69AF /* fav.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD43246284E478C007C69AF /* fav.swift */; };
 		BCDC1765283C6A2900E6E516 /* sbyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC1764283C6A2900E6E516 /* sbyApp.swift */; };
 		BCDC1767283C6A2900E6E516 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDC1766283C6A2900E6E516 /* ContentView.swift */; };
 		BCDC1769283C6A2B00E6E516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDC1768283C6A2B00E6E516 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		BCD43240284D704D007C69AF /* detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detail.swift; sourceTree = "<group>"; };
 		BCD43242284D7E75007C69AF /* catview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catview.swift; sourceTree = "<group>"; };
 		BCD43244284D85D8007C69AF /* mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapview.swift; sourceTree = "<group>"; };
+		BCD43246284E478C007C69AF /* fav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fav.swift; sourceTree = "<group>"; };
 		BCDC1761283C6A2900E6E516 /* sby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDC1764283C6A2900E6E516 /* sbyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sbyApp.swift; sourceTree = "<group>"; };
 		BCDC1766283C6A2900E6E516 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				BCDC1764283C6A2900E6E516 /* sbyApp.swift */,
 				BCDC1766283C6A2900E6E516 /* ContentView.swift */,
+				BCD43246284E478C007C69AF /* fav.swift */,
 				BCAFFEC7284C72F000AC17AF /* home.swift */,
 				BCAFFEBB284491FE00AC17AF /* favorite.swift */,
 				BCD4323E284CF438007C69AF /* list.swift */,
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCD43245284D85D8007C69AF /* mapview.swift in Sources */,
+				BCD43247284E478C007C69AF /* fav.swift in Sources */,
 				BCAFFEC6284C6F7E00AC17AF /* TabBar.swift in Sources */,
 				BCAFFECD284C75D500AC17AF /* wisatamodel.swift in Sources */,
 				BCDC1767283C6A2900E6E516 /* ContentView.swift in Sources */,

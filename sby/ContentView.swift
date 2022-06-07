@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    //@ObservedObject var favorites = fav()
     var body: some View {
         TabBar()
+      //      .environmentObject(favorite)
     }
 }
 
