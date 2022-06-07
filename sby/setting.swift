@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct setting: View {
+    @AppStorage("isDark") private var isDark = false
     var body: some View {
         NavigationView{
-            Text("v1.0.0")
-                .foregroundColor(.brown)
-                .navigationTitle("Settings")
+            VStack{
+                Picker("Mode", selection: $isDark) {
+                    Text("Light")
+                        .tag(false)
+                    Text("Dark")
+                        .tag(true)
+                            }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .padding()
+                        Spacer()
+                Text("v1.0.0")
+                    .foregroundColor(.brown)
+                    .navigationTitle("Settings")
+            }
         }
         .navigationViewStyle(.stack)
     }

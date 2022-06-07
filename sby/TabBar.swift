@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabBar: View {
+    @AppStorage("isDark") private var isDark = false
     var body: some View {
         TabView{
             category()
@@ -31,6 +32,8 @@ struct TabBar: View {
                     Label("Settings", systemImage: "gear")
                 }
         }
+            .environment(\.colorScheme, isDark ? .dark : .light)
+            .preferredColorScheme(isDark ? .dark : .light)
     }
 }
 
